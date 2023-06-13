@@ -1,0 +1,31 @@
+/* Estilos para la lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilos para los elementos de la lista */
+  li {
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para el hover de los elementos de la lista */
+  li:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Estilos para el primer elemento de la lista */
+  li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  /* Estilos para el último elemento de la lista */
+  li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
