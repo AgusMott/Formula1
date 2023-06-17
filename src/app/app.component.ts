@@ -9,8 +9,10 @@ interface Corredor {
    * En TypeScript, el nombre del tipo string se escribe con minúsculas.
   */
   image?: string;
-  titulo: string;
-  subtitulo: string;
+  nombre: string;
+  escuderia: string;
+  numero: number;
+  pais?:string;
 }
 
 /**
@@ -27,7 +29,7 @@ interface Corredor {
 })
 export class AppComponent implements OnInit {
   
-  public titulo = 'Corredores';
+  public corredor = 'Corredores';
 
   /**
    * La propiedad tarjetas está declarada como un array de tipo Tarjeta.
@@ -66,54 +68,74 @@ export class AppComponent implements OnInit {
      */
     this.corredores = [
       {
-        titulo: 'Verstappen',
-        subtitulo: 'Red Bull',
+        nombre: 'Verstappen',
+        escuderia: 'Red Bull',
         image: "../assets/img/corredores/Verstappen.jpg"
+        ,numero:1
+        ,pais:"../assets/img/Banderas/netherlands.png"
       },
       {
-        titulo: 'Hamilton',
-        subtitulo: 'Mercedes',
+        nombre: 'Hamilton',
+        escuderia: 'Mercedes',
         image: "../assets/img/corredores/Hamilton.jpg"
+        ,numero:44
+        ,pais:"../assets/img/Banderas/britain.png"
       },
       {
-        titulo: 'Alonso',
-        subtitulo: 'Aston Martin',
+        nombre: 'Alonso',
+        escuderia: 'Aston Martin',
         image: "../assets/img/corredores/Alonso.jpg"
+        ,numero:14
+        ,pais:"../assets/img/Banderas/spain.png"
       },
       {
-        titulo: 'Leclerc',
-        subtitulo: 'Ferrari',
+        nombre: 'Leclerc',
+        escuderia: 'Ferrari',
         image: "../assets/img/corredores/Leclerc.jpg"
+        ,numero:16
+        ,pais:"../assets/img/Banderas/monaco.png"
       },
       {
-        titulo: 'Norris',
-        subtitulo: 'MClaren',
+        nombre: 'Norris',
+        escuderia: 'MClaren',
         image: "../assets/img/corredores/Norris.jpg"
+        ,numero:4
+        ,pais:"../assets/img/Banderas/britain.png"
       },
       {
-        titulo: 'Ocon',
-        subtitulo: 'Alpine',
+        nombre: 'Ocon',
+        escuderia: 'Alpine',
         image: "../assets/img/corredores/Ocon.jpg"
+        ,numero:31
+        ,pais:"../assets/img/Banderas/france.png"
       },
       {
-        titulo: 'Perez',
-        subtitulo: 'Red Bull',
+        nombre: 'Perez',
+        escuderia: 'Red Bull',
         image: "../assets/img/corredores/Perez.jpg"
+        ,numero:11
+        ,pais:"../assets/img/Banderas/mexico.png"
       },
       {
-        titulo: 'Russel',
-        subtitulo: 'Mercedes',
+        nombre: 'Russel',
+        escuderia: 'Mercedes',
         image: "../assets/img/corredores/Russel.jpg"
+        ,numero:63
+        ,pais:"../assets/img/Banderas/britain.png"
       },
       {
-        titulo: 'Sainz',
-        subtitulo: 'Ferrari',
+        nombre: 'Sainz',
+        escuderia: 'Ferrari',
         image: "../assets/img/corredores/Sainz.jpg"
+        ,numero:55
+        ,pais:"../assets/img/Banderas/spain.png"
       },
       {
-        titulo: 'Stroll',
-        subtitulo: 'Aston Martin',
+        nombre: 'Stroll',
+        escuderia: 'Aston Martin',
         image: "../assets/img/corredores/Stroll.jpg"
+        ,numero:18
+        ,pais:"../assets/img/Banderas/canada.png"
       }
     ]
 
