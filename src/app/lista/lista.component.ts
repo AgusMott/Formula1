@@ -8,4 +8,7 @@ import {Corredor} from './app.component';
 export class ListaComponent implements OnInit {
   corredores!:corredor[];
 
+  (cliente: any){
+    this.corredores.splice(cliente, 1);
+  }
 }
