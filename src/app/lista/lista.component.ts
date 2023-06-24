@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import {Corredor} from './app.component';
+import { Component} from '@angular/core';
+import {Corredor} from '../app.component';
 @Component({
   selector: 'app-lista',
   templateUrl: './lista.component.html',
   styleUrls: ['./lista.component.css']
 })
-export class ListaComponent implements OnInit {
-  corredores!:corredor[];
+export class ListaComponent {
+  corredores!:Corredor[];
 
-  (cliente: any){
-    this.corredores.splice(cliente, 1);
+  borrarCorredor(corredor: any){
+    this.corredores.splice(corredor, 1);
   }
 }

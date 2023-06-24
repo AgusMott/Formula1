@@ -1,14 +1,14 @@
-<!-- La clase card de esta div es de la css, no del TypeScript -->
+
 <div class="corredor">
 
     <img class="image" [src]="dataEntrante.image" alt="">
     <div class="caption">
   
-      <div class="title">{{dataEntrante.titulo}}</div>
-      <div class="sub-title">{{dataEntrante.subtitulo}}</div>
+      <div class="nombre">{{dataEntrante.nombre}}</div>
+      <div class="escuderia">{{dataEntrante.escuderia}}</div>
       <br>
     
-      <button class="favorite" (click)="AgregarALista()">Añadir a Favoritos</button>
+      <button class="favorite" (click)="AgregarALista()">Añadir</button>
       
     
     </div>

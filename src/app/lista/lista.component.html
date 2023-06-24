@@ -1,1 +1,10 @@
-<p>lista works!</p>
+<h2 class="TituloLista">
+    Grilla
+  </h2>
+  <article *ngFor="let corredor of corredores">
+    <span>{{corredor.nombre}}</span>
+    <span>{{corredor.escuderia}}</span>
+    <span>{{corredor.numero}}</span>
+    <span>{{corredor.pais}}</span>
+    <button class="botonEliminar" (click)="this.borrarCorredor(this.corredor)">X</button>
+  </article>

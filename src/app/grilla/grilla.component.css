@@ -1,4 +1,4 @@
-.card {
+.corredor {
   margin: auto;
   border: 1px solid black;
   padding: 1rem;
@@ -16,12 +16,12 @@
   text-align: center;
 }
 
-.title {
+.nombre {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
-.sub-title {
+.escuderia {
   font-size: 1rem;
 }
 
