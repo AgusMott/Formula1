@@ -69,7 +69,7 @@ export class AppComponent implements OnInit {
         ,pais:"../assets/img/Banderas/mexico.png"
       },
       {
-        nombre: 'Russel',
+        nombre: 'Russell',
         escuderia: 'Mercedes',
         image: "../assets/img/Corredores/Russell.jpg"
         ,numero:63
