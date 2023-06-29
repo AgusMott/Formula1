@@ -1,5 +1,4 @@
 import { Component,OnInit} from '@angular/core';
-import {Corredor} from '../app.component';
 import { ServicioCorredores } from '../service';
 
 @Component({
@@ -7,16 +6,20 @@ import { ServicioCorredores } from '../service';
   templateUrl: './lista.component.html',
   styleUrls: ['./lista.component.css']
 })
+
 export class ListaComponent implements OnInit{
+
   public corredores:Array<any> = [];
+  
   constructor(private servicioCorredores: ServicioCorredores) { }
   ngOnInit(): void {
-    this.servicioCorredores.diparadorCorredores.subscribe(
+    this.servicioCorredores.disparadorCorredores.subscribe(
       data => { this.corredores.push(data) }
     )
   }
-  //corredores!:Corredor[];
+  
   borrarCorredor(corredor: any){
-    this.corredores.splice(corredor, 1);
+    let index = this.corredores.indexOf(corredor);
+    this.corredores.splice(index, 1);
   }
 }

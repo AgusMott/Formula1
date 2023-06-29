@@ -4,11 +4,13 @@
     <img class="image" [src]="dataEntrante.image" alt="">
     <div class="caption">
   
+      <div class="numero">{{dataEntrante.numero}}</div>
       <div class="nombre">{{dataEntrante.nombre}}</div>
+      <img class="pais" [src]="dataEntrante.pais" alt="">
       <div class="escuderia">{{dataEntrante.escuderia}}</div>
       <br>
     
-      <button class="favorite" (click)="AgregarALista()">Añadir</button>
+      <button class="favorite" (click)="AgregarALista()">Añadir a Parrilla</button>
       
     
     </div>

@@ -1,10 +1,30 @@
-<h2 class="TituloLista">
-    Grilla
-  </h2>
-  <article *ngFor="let corredor of corredores">
-    <span>{{corredor.nombre}}</span>
-    <span>{{corredor.escuderia}}</span>
-    <span>{{corredor.numero}}</span>
-    <span>{{corredor.pais}}</span>
-    <button class="botonEliminar" (click)="this.borrarCorredor(this.corredor)">X</button>
-  </article>
+<div>
+  <h2 class="TituloLista">Parrilla de Salida</h2>
+
+</div>
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Número</th>
+        <th scope="col">Corredor</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">País</th>
+        <th scope="col">Escuderia</th>
+        <th scope="col">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let corredor of corredores">
+        
+          <td>{{corredor.data.numero}}</td>
+          <td><img class="mini-image" [src]="corredor.data.image" alt=""></td>
+          <td>{{corredor.data.nombre}}</td>
+          <td><img class="image-pais" [src]="corredor.data.pais" alt=""></td>
+          <td>{{corredor.data.escuderia}}</td>
+          <td><button class="botonEliminar"(click)="borrarCorredor(corredor)" >Eliminar</button></td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
