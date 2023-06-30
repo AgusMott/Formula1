@@ -5,20 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GrillaComponent } from './grilla/grilla.component';
 import { ListaComponent } from './lista/lista.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LlegadaComponent } from './llegada/llegada.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes:Routes=[
+
+  {path:"", component:AppComponent},
+  {path:"llegada",component:LlegadaComponent}
+
+];
 @NgModule({
   declarations: [
     AppComponent,
     GrillaComponent,
-    ListaComponent
+    ListaComponent,
+    LlegadaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,22 +1,24 @@
-<div>
-  <h2 class="TituloLista">Parrilla de Salida</h2>
 
+<div class="container">
+  <h2>Parrilla de Salida</h2>
+  <img src="assets/img/Decoradores/casco.png" alt="Descripción de la imagen">
 </div>
 <div class="container">
   <table class="table table-striped">
     <thead>
       <tr>
+        <th scope="col">Posición</th>
         <th scope="col">Número</th>
-        <th scope="col">Corredor</th>
+        <th scope="col">Piloto</th>
         <th scope="col">Nombre</th>
-        <th scope="col">País</th>
-        <th scope="col">Escuderia</th>
-        <th scope="col">Acción</th>
+        <th scope="col">Nacionalidad</th>
+        <th scope="col">Escudería</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let corredor of corredores">
-        
+      <tr *ngFor="let corredor of corredores; let i = index">
+        <td>{{ i+1 }}°</td>
           <td>{{corredor.data.numero}}</td>
           <td><img class="mini-image" [src]="corredor.data.image" alt=""></td>
           <td>{{corredor.data.nombre}}</td>

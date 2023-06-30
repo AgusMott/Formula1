@@ -15,7 +15,7 @@ export interface Corredor {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public titulo = 'Corredores';
+  public titulo = 'Pilotos';
   public corredores: Corredor[] = [];
 
   ngOnInit(): void {

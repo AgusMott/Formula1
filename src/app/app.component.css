@@ -1,3 +1,39 @@
+header {
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+nav {
+  float: left;
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #eca023;
+}
+
+
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -6,6 +42,26 @@
   padding-bottom: 1rem;
 }
 
-h1 {
+
+
+.container {
+  text-align: center; /* Centrar el contenido */
+}
+.container img {
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  display: inline-block; /* Mostrar la imagen como un elemento en línea */
+  vertical-align: middle; /* Alinear verticalmente con el texto */
+  width: 50px; /* Ancho deseado de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+.container h1 {
   color: white;
+  text-align: center;
+  font-family: Calisto MT, serif;
+  font-size: 50px;
+  margin-top: 20px;
+  display: inline-block; /* Mostrar el título como un elemento en línea */
+  vertical-align: middle; /* Alinear verticalmente con la imagen */
+  align-items: center;
 }
